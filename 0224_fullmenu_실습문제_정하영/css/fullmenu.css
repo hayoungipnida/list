@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+*,*:after, *:before {box-sizing: border-box;}
+a {text-decoration: none; color: black;}
+
+header { width: 100%; background: rgb(250, 250, 250); border-bottom: 1px solid rgb(209, 209, 209);}
+#mm {width: 70%; margin: 0 auto; position: relative; height: 70px;}
+h1 img {position: absolute; top: 12px;}
+.menu { position: absolute;  left: 300px; display: flex; text-align: center; margin: 20px 0;}
+.menu li { display: inline-block; padding-right: 50px; font-weight: bold; }
+.mr {position: absolute; right: 20px; top: 20px;}
+.mr li{ display: inline-block; padding-right: 10px; }
+
+
+#submenubox {width: 100%; height: 350px;  background: rgb(250, 250, 250); padding-top: 40px; position: absolute; left: 0; top: 71px; /*display: none;*/}
+.submenu {width: 65% !important; margin: 0 auto; display: flex; }
+
+.sub1 {width: 18%; height: 227px; text-align: left; line-height: 2rem; font-weight: bold ; font-size: 0.9rem;}
+
+.sub2 {width: 18%; height: 227px; text-align: left; font-size: 0.8rem; line-height: 1.8rem;}
+.title {font-size: 0.9rem !important; font-weight: bold;}
+.sub3{width: 18%; height: 227px; text-align: left; font-size: 0.8rem; line-height: 1.8rem;}
+.sub4{width: 18%; height: 227px; text-align: left; font-size: 0.8rem;line-height: 1.8rem;}
+
+.sub5{position: relative; right: 0px;}
+.sub5 > p  { text-align: center; font-size: 0.8rem; font-weight: bold;}
