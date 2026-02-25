@@ -1,0 +1,13 @@
+@charset "utf-8";
+*,*:after, *:before {box-sizing: border-box;}
+
+#container {width: 800px; margin: 100px auto;}
+.tab {display: flex; justify-content: space-between; }
+.tab li {flex: 1;}
+.tab a {text-decoration: none; color: black;  display: block; line-height: 40px; font-weight: bold; text-align: center;}
+.tab .selected {color: tomato;}
+
+.panel {text-align: justify; }
+.imgp {display: flex; flex-wrap: wrap; }
+.imgp img{width: 200px;}
+.imgp span {display: block; text-align: center; margin-bottom: 50px; font-size: 0.8rem;}
