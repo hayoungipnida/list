@@ -1,0 +1,54 @@
+@charset "utf-8";
+*,*:after, *:before {box-sizing: border-box;}
+a {text-decoration: none;}
+legend {display: none;}
+
+header {position: absolute; top: 56px; left: 6px;}
+
+#body {width: 402px; padding: 110px 15px 74px;}
+h2 {font-weight: lighter; margin-bottom: 12px; font-size: 17px}
+h3 {font-weight: lighter; font-size: 10px;}
+
+.box1{
+    width: 372px; 
+    height: 624px; 
+    border: 0.5px solid #959696; 
+    border-radius: 10px; 
+    margin: 25px auto; 
+    position: relative;}
+
+ .box2 {
+    width: 372px; 
+    height: 643px; 
+    border: 0.5px solid #959696; 
+    border-radius: 10px; 
+    margin: 25px auto; 
+    position: relative;}
+
+.t1, .t2 {margin: 21px 17px 15px; display: flex; flex-wrap: wrap; gap: 7px;  align-items: center; font-size: 10px;}
+.as {flex-basis: 100%; font-size: 12px!important; font-weight: lighter;}
+
+.list {margin-top: 17px; margin-left: 15px;}
+.list li {font-size: 10px;}
+.nm {color: #6D6E70; margin-top: 5px;}
+.list input { width: 342px; height: 35px; margin-bottom: 15px; margin-top: 10px; border-radius: 10px; border: 0.8px solid #deccbb;}
+.list li ::placeholder {font-size: 10px; padding-left: 14px;}
+.list .ra {width: 15px; height: 15px; color: #919191; vertical-align: middle; }
+
+#btn button { border-radius: 15px; color: #fff; background: #d60815; border: none; font-size: 10px; width: 78px; height: 30px; position: absolute; right: 15px; bottom: 25px;}
+
+.id-box input { width: 275px!important;}
+.idc_button {border: 0.5px solid #919191; background-color: #fff; border-radius: 15px; width: 62px; height: 35px; position: absolute; right: 15px; top: 128px; font-size: 10px; color: #919191;}
+
+.gbtn {display: flex; gap: 8px; position: absolute; right: 15px; bottom:25px;}
+
+.btn1 {border-radius: 15px; color: #919191; background: #fff; border: 0.5px solid #919191; font-size: 10px; width: 78px; height: 30px;}
+.btn2 {border-radius: 15px; color: #fff; background: #d60815; border: none; font-size: 10px; width: 78px; height: 30px;}
+
+
+.underbox {width: 372px; height: 56px; border: 0.5px solid #aaaaaa; border-radius: 10px; margin-bottom: 25px; background: #F5F5F5; display: flex;}
+
+.bc {display: flex; gap: 7px; align-items: center; margin-left: 15px;}
+.underbox span {color: #919191; font-size: 9px; }
+
+button {cursor: pointer;}

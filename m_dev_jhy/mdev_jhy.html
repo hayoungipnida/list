@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/mdev.css">
+    <script src="js/mdev.js"></script>
+
+</head>
+<body>
+    <header><a href="#"><img src="img/logo.png" alt="logo"></a></header>
+    
+<form name="signup" action="result.php" method="post" onsubmit="return totalCheck()" >
+            <fieldset>
+                <legend>신규가입</legend>
+
+    <div id="body">
+        <div>
+            <h2>회원가입</h2>
+            <h3><span style="color: #D60815;">*</span>는 필수 입력 사항입니다.</h3>
+        </div>
+
+        <div>
+            
+            <ul  class="box1">
+                <ul class="t1">
+                    <li><img src="img/user1.png" alt="icon"></li>
+                    <li>기본정보</li>
+                    <li class="as">개인정보를 입력해주세요</li>
+                </ul>
+                <ul class="list">
+                    
+                    <li>영문 성<span style="color: #D60815;">*</span></li>
+                    <li class="nm">특수 문자 제외하여 여권과 동일한 철자로 입력해주세요</li>
+                    <li>
+                        <label for="ln"></label> 
+                        <input type="text" id="ln" name="ln" placeholder="예&#41; KIM">
+                    </li>
+
+                    <li>영문 이름<span style="color: #D60815;">*</span></li>
+                    <li class="nm">특수 문자 제외하여 여권과 동일한 철자로 입력해주세요</li>
+                    <li>
+                        <label for="fn"></label>
+                        <input type="text" id="fn" name="fn" placeholder="예&#41; HANKUK">
+                    </li>
+
+                    <li>한글 성<span style="color: #D60815;">*</span></li>
+                    <li>
+                        <label for="kln"></label>
+                        <input type="text" id="kln" name="kln" placeholder="예&#41; 김">
+                    </li>
+
+                    <li>한글 이름<span style="color: #D60815;">*</span></li>
+                    <li>
+                        <label for="kfn"></label>
+                        <input type="text" id="kfn" name="kfn" placeholder="예&#41; 한국">
+                    </li>
+
+                    <li>생년월일<span style="color: #D60815;">*</span></li>
+                    <li>
+                        <label for="dob"></label>
+                        <input type="text" id="dob" name="dob" placeholder="XXXX년 XX월 XX일">
+                    </li>
+
+                    <li>
+                        <li>성별 선택<span style="color: #D60815;">*</span></li>
+                        <input class="ra" type="radio" id="opt1" name="sex" value="male">
+                        <label for="opt1"style="font-size: 10px;">남자</label>
+                        
+                        <input class="ra" type="radio" id="opt2" name="sex" value="female">
+                        <label for="opt2" style="font-size: 10px;">여자</label>
+                    </li>
+                </ul>
+                <li id="btn">
+                    <button type="button" value="submit" onclick="validateForm()" >다음</button>
+                </li>
+            </ul>
+
+
+
+        <ul  class="box2">
+                <ul class="t2">
+                    <li><img src="img/personalcard1.png" alt="icon"></li>
+                    <li>계정 및 연락처 정보</li>
+                    <li class="as">사용하실 아이디와 비밀번호, 연락처를 입력해 주세요</li>
+                </ul>
+                <ul class="list">
+                    
+                    <li>아이디<span style="color: #D60815;">*</span></li>
+                    <li class="nm">6~12자리 영문, 숫자로 입력</li>
+                    <li class="id-box">
+                        <label for="id"></label>
+                        <input type="text" id="id" name="userid" placeholder="아이디 입력">
+                    </li>
+                    <li><button type="button" class="idc_button">중복 확인</button></li>
+
+                    <li>비밀번호<span style="color: #D60815;">*</span></li>
+                    <li class="nm">영문+숫자+특수문자(@~!#$%^&*()-=+,.?) 8자~20자 이내 입력 가능</li>
+                    <li>
+                        <label for="psw"></label>
+                        <input type="password" id="psw" name="psw" placeholder="비밀번호 입력">
+                    </li>
+
+                    <li>비밀번호 확인<span style="color: #D60815;">*</span></li>
+                    <li>
+                        <label for="psw_c"></label>
+                        <input type="password" id="psw_c" name="psw_c" placeholder="비밀번호 재입력">
+                    </li>
+
+                    <li>휴대전화 번호<span style="color: #D60815;">*</span></li>
+                    <li>
+                        <label for="pno"></label>
+                        <input type="text" id="pno" name="pno" placeholder="대한민국 (82)">
+                    </li>
+
+                    <li>이메일 주소<span style="color: #D60815;">*</span></li>
+                    <li>
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" placeholder="예&#41; abc@asiana.com">
+                    </li>
+ 
+                    <li>거주국가 주소<span style="color: #D60815;">*</span></li>
+                    <li>
+                        <label for="address"></label>
+                        <input type="text" id="address" name="address" placeholder="예&#41; 대한민국 서울특별시">
+                    </li>
+                </ul>
+            
+
+            <ul class="gbtn">
+                <li>
+                    <button type="submit" class="btn1" >이전</button>
+                </li>
+
+                <li id="btn2">
+                    <button type="submit" value="submit" class="btn2" onclick="validateForm1()">다음</button>
+                </li>
+            </ul>
+        </ul>
+
+        </div>
+        <div class="underbox">
+            <div class="bc">
+            <img src="img/verify2.png" alt="icon">
+            <span>약관 동의</span>
+            </div>
+        </div>
+    </div>
+    </fieldset>
+</form>
+</body>
+</html>
